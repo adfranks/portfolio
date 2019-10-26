@@ -29,11 +29,12 @@ p {font-size: 1.2em;}
 ul {list-style-type: none;}
 li {margin-bottom: 10px;}
 strong {color: rgb(53, 180, 160);}
-a {color: white;} 
+a, a:visited, a:active {color: white;} 
 a:hover {color: rgba(0,0,0,0.7);}
 textarea::-webkit-input-placeholder {color: white !important; font-style: italic;}
 button {letter-spacing: 1px;} 
-button[type="submit"]:hover, button[type="submit"], .more, .more:hover  {
+button[type="submit"]:hover, button[type="submit"], 
+.more, .more:hover  {
 	transition: all 0s;
 }
 button[type="submit"]:hover {

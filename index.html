@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en-US" id="portfolio-page">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Adam Franks | Web Development</title>
+  <meta name="keywords" content="web developer, front-end, portfolio, web development, website, 
+  wordpress, web design" />
+  <meta name="description"
+  content="View the portfolio of web developer, Adam Franks.  Primarily in the
+  front-end, he builds web interfaces and applications." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/A-icon.png">
+  <link rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="portfolio.css">
+  <script 
+  src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+  </script>
+  <script
+  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+  </script>
+  <!--[if IE]>
+    <style>
+      input[type="text"], input[type="email"], button[type="submit"], textarea.form-control {
+          background-color: rgba(0, 0, 0, 0.7); 
+      }
+    </style>
+  <![endif]-->
+  <!--[if lt IE 9]>
+    <style>
+      body {width: 650px; margin: 0 auto; background-color: black;}
+      h1 {position: absolute; top: 30%; left: 11%; text-transform: uppercase;}
+      a:hover {background-color: white; color: black;}
+      form {display: none;}
+      #first {font-size: 250%;}
+      #first ul {margin-top: 15px;}
+      #first li {margin: 0 15px;}
+      #first a {border: thin solid white;}
+      #first a:hover {border: thin solid black;}
+      #intro, #contact, #foot {margin-bottom: 75px;}
+      #projects {margin-bottom: 25px;}
+      #projects .row {margin-bottom: 50px;}
+      #foot a {padding: 5px;}
+      .flip-in, .sweep-in {visibility: visible;}
+      .overlay, .text {display: none;}
+    </style>
+  <![endif]-->
+</head>
+
+<body>
+
+<div id="first">
+  <nav>
+    <ul class="text-center list-inline list-unstyled">
+      <li><a href="../index.html">home</a></li>
+      <li><a href="#intro">about</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+  </nav>
+  <header>
+    <h1 class="fly-up">
+      <span id="firstH1">adam</span>
+      <span id="middleH1">web development</span><br/>
+      <span id="lastH1">franks</span>
+    </h1>
+  </header>
+</div>
+
+<div id="intro">
+  <div class="container">
+    <h2 class="text-center margin">about</h2>
+    <p>Hi!  I build websites 
+    using open-source graphic software, HTML(5), CSS(3), Javascript, and PHP.
+    In addition to these tools, I take advantage of frameworks, preprocessors
+    and libraries, such as Bootstrap, Sass and jQuery.
+    I've found I enjoy creating the visual aspects of design as well
+    as the challenge of building dynamic interfaces and applications.  Feel
+    free to visit my <a href="https://github.com/adfranks" target="_blank">GitHub profile</a>.
+    </p>
+  </div>
+</div>
+
+<div id="projects">
+  <div class="container">
+    <h2 class="text-center margin">projects</h2>
+    <div class="row">
+      <div class="wrap col-md-6">
+        <a href="../brickball/brickball.php" target="_blank">
+          <div class="image-wrap">
+            <img src="images/brick-ball.png" alt="Brickball" class="image sweep-in" />
+            <div class="overlay">Brick Ball</div>
+            <div class="text">Launch Website</div>
+          </div>
+        </a>
+      </div>
+      <div class="desc col-md-6">
+        <p class="thumb-desc">
+        <strong>Brick Ball</strong>
+        is a version of the classic Breakout video game. 
+        I solely used HTML(5), vanilla Javascript and a little CSS.
+        The back end of the membership features was written in PHP.
+        View the source code on <a href="https://github.com/adfranks/brickball" target="_blank" style="text-decoration:underline;">GitHub</a>.
+        This application was designed for larger screens and a keyboard.
+        </p>
+        <a href="../brickball/brickball.php" target="_blank" class="text-center more">Launch Website</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="wrap col-md-6">
+        <a href="../solo/index.html" target="_blank">
+          <div class="image-wrap">
+            <img src="images/solo.png" alt="Music of Adam Franks" class="image sweep-in" />
+            <div class="overlay">Adam Franks | Music</div>
+            <div class="text">Launch Website</div>
+          </div>
+        </a>
+      </div>
+      <div id="last-desc" class="desc col-md-6">
+        <p class="thumb-desc">
+        <strong>Music | Adam Franks</strong>
+        is an online presence for my music.  
+        This responsive site was built with HTML(5),
+        CSS(3), and Javascript, without the assistance of frameworks.  A parallax
+        scrolling effect is used. The slideshow was built from scratch.  Album artwork was produced and designed in GIMP, a graphics editor. 
+        View the source code on <a href="https://github.com/adfranks/solo" target="_blank" style="text-decoration:underline;">GitHub</a>.</p>
+
+        <a href="../solo/index.html" class="text-center more" target="_blank">Launch Website</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="wrap col-md-6">
+        <a href="../hike/index.php" target="_blank">
+          <div class="image-wrap">
+            <img src="images/hiking.png" alt="hike" class="image sweep-in" />
+            <div class="overlay">Hike!</div>
+            <div class="text">Launch Website</div>
+          </div>
+        </a>
+      </div>
+      <div id="last-desc" class="desc col-md-6">
+        <p class="thumb-desc">
+        <strong>Hike!</strong>
+        is a hiking website with trip reports and maps.  
+        It was built with a content management system, Wordpress.  I customized a
+        standard theme to fit the particular needs of the site.  Plug-ins were used
+        to enhance the look and performance.  Additionally, I hand coded
+        a little HTML and CSS.</p>
+        <a href="../hike/index.php" class="text-center more" target="_blank">Launch Website</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="contact">
+  <div class="container">
+    <h2 class="text-center margin">contact</h2>
+    <div class="row">
+      <div id="glyphs" class="col-sm-6">
+        <p>Do you need something or want to work together?</p>
+        <p>Get in touch.</p>
+        <p><span class="glyphicon glyphicon-envelope"></span>
+        <a href="mailto:info@adfranks.com"> info@adfranks.com</a></p>
+      </div>
+      <div class="col-sm-6">
+        <form action="mail.php" method="post" role="form">
+          <div class="form-group">
+            <label class="sr-only" name="name" for="name">Name:</label>
+            <input type="text" class="form-control input-lg flip-in" id="name" name="name" placeholder="Name" required>
+            <span class="error"></span>
+          </div>
+          <div class="form-group">
+            <label class="sr-only" name="email" for="email">Email address:</label>
+            <input type="email" class="form-control input-lg flip-in" id="email" name="email" placeholder="Email" required>
+            <span class="error"></span>
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="comment">Message:</label>
+            <textarea class="form-control input-lg flip-in" rows="5" id="comment" name="comment" placeholder="Message"></textarea>
+            <span class="error"></span>
+          </div>
+          <button type="submit" value="submit" class="btn btn-default btn-lg text-uppercase pull-right flip-in">submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="foot">
+  <footer class="container">
+    <h2>adam franks <small style="color:lightgrey;">~ web development</small></h2>
+    <div id="up" class="text-center">
+      <a href="#portfolio-page" data-toggle="tooltip" title="To the Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+      </a>
+    </div>
+  </footer>
+</div>
+
+<script>
+// Animation triggered by scroll event.
+$(window).scroll(function() {
+    $(".flip-in, .sweep-in, .fly-up").each(function(){
+        var loc = $(this).offset().top;
+        var theTop = $(window).scrollTop();
+        if (loc < theTop + 600 || ($(window).height() + theTop == $(document).height())) {
+            $(this).filter(".flip-in").addClass("flip");
+            $(this).filter(".sweep-in").addClass("sweep");
+            $(this).filter(".fly-up").addClass("fly");
+        }
+    });
+});
+
+// Tooltip.
+$('[data-toggle="tooltip"]').tooltip({delay: {show: 220, hide: 20}});
+
+// Ensure placeholder for older browsers with feature detection.
+var placeholderDetect = "placeholder" in document.createElement("input");
+if (!placeholderDetect) {
+    $("[placeholder]").focus(function() {
+        var input = $(this);
+        if (input.val() == input.attr("placeholder")) {
+            input.val('');
+        }
+    }).blur(function() {
+        var input = $(this);
+        if (input.val() == '') {
+            input.val(input.attr("placeholder"));
+        }
+    }).blur();
+}
+</script>
+
+</body>
