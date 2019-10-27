@@ -125,8 +125,6 @@ input[type="text"], input[type="email"], button[type="submit"], textarea.form-co
 
 #projects {background-color: rgba(53, 180, 160, 0.2);}
 
-#last-desc {padding-bottom: 30px;}
-
 #contact {background-color: rgba(3, 85, 166, 0.2);}
 
 #contact a {vertical-align: 5%;}
@@ -167,6 +165,8 @@ input[type="text"], input[type="email"], button[type="submit"], textarea.form-co
 .wrap a:hover {color: white;} /* For Google Chrome to avoid black flicker */
 
 .desc {padding: 0 0 40px;}
+
+.last-desc {padding-bottom: 30px;}
 
 .thumb-desc {padding-left: 15px; padding-right: 15px;}
 
@@ -429,8 +429,6 @@ input[type="text"], input[type="email"], button[type="submit"], textarea.form-co
 
 	#intro .margin {margin-bottom: 25px;}
 
-	#last-desc {padding-bottom: 40px;}
-
 	#contact .row {padding-top: 0; padding-bottom: 30px;}
 
 	#up {margin-top: 60px;}
@@ -438,6 +436,8 @@ input[type="text"], input[type="email"], button[type="submit"], textarea.form-co
 	.container {max-width: 650px; padding: 60px 0;}
 
 	.margin {margin-bottom: 60px;}
+
+	.last-desc {padding-bottom: 40px;}
 
 	.desc {padding-bottom: 80px;}
 
