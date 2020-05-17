@@ -2,32 +2,37 @@
 html, body {height: 100%;}
 
 body {
-	background: rgb(82, 82, 82) url("images/adam23.jpg") center top/cover no-repeat fixed;
-	font-family: Tahoma, "Trebuchet MS", Verdana, "Palatino Linotype", Georgia, sans-serif;
-	color: white;
-	letter-spacing: 0.75px;
+  background-color: rgb(82, 82, 82);
+  font-family: Tahoma, "Trebuchet MS", Verdana, Georgia, sans-serif;
+  color: white;
+  letter-spacing: 0.75px;
 }
 
 header {
-	position: absolute;
-	bottom: 12%;
-	width: 100%;
-	letter-spacing: 6px; 
-	text-align: center;
-	text-transform: uppercase;
-	border-top: thin solid rgba(288, 288, 288, 0.7);
-	border-bottom: thin solid rgba(288, 288, 288, 0.7);
+  position: absolute;
+  bottom: 12%;
+  width: 100%;
+  letter-spacing: 6px; 
+  text-align: center;
+  text-transform: uppercase;
+  border-top: thin solid rgba(288, 288, 288, 0.7);
+  border-bottom: thin solid rgba(288, 288, 288, 0.7);
 }
 
 h1 {
-	border-top: thin solid rgba(288, 288, 288, 0.7);
-	border-bottom: thin solid rgba(288, 288, 288, 0.7);
-	padding: 0 5px; 
-	font-size: 2.2em; 
-	margin-bottom: 20px;
+  border-top: thin solid rgba(288, 288, 288, 0.7);
+  border-bottom: thin solid rgba(288, 288, 288, 0.7);
+  padding: 0 5px; 
+  font-size: 2.2em; 
+  margin-bottom: 20px;
 }
 
-h2 {text-transform: uppercase; font-size: 1.5em; letter-spacing: 9px; margin-top: 10px;}
+h2 {
+  text-transform: uppercase; 
+  font-size: 1.5em; 
+  letter-spacing: 9px; 
+  margin-top: 10px;
+}
 
 h2 small {font-style: italic; vertical-align: 5%;}
 
@@ -43,7 +48,10 @@ a, a:visited, a:active {color: white;}
 
 a:hover {color: rgba(0,0,0,0.7);}
 
-textarea::-webkit-input-placeholder {color: white !important; font-style: italic;}
+textarea::-webkit-input-placeholder {
+  color: white !important; 
+  font-style: italic;
+}
 
 button {letter-spacing: 1px;} 
 
@@ -79,12 +87,20 @@ input[type="text"], input[type="email"], button[type="submit"], textarea.form-co
 :-ms-input-placeholder {color: white !important; font-style: italic;}
 
 /* Style elements with an id. */
+#backg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  min-width: 100%;
+  min-height: 100%;
+}
+
 #first {position: relative; height: 100%;}
 
 #first nav {margin-top: 4vh; margin-bottom: 4vh;}
 
 #first ul li a {
-	font-size: 0.75em;
 	padding: 5px; 
 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
 	border: thin solid rgba(82, 82, 82, 0.4);
@@ -376,184 +392,186 @@ input[type="text"], input[type="email"], button[type="submit"], textarea.form-co
   header {border: none;}
 
   h1 {
-		font-size: 2em; 
-		border-top: medium double rgba(288, 288, 288, 0.4); 
-		border-bottom: medium double rgba(288, 288, 288, 0.4);
+    font-size: 2em; 
+    border-top: medium double rgba(288, 288, 288, 0.4); 
+    border-bottom: medium double rgba(288, 288, 288, 0.4);
   }
 }
 
 @media only screen and (min-width: 370px) {
-	h1 {font-size: 2.75em;}
+  h1 {font-size: 2.75em;}
 
-	h2 {font-size: 2em;}
+  h2 {font-size: 2em;}
 
-	p {font-size: 1.4em; line-height: 1.4;}
+  p {font-size: 1.4em; line-height: 1.4;}
 
-	#first ul li a {font-size: 1.3em;}
+  #first ul li a {font-size: 1.5em;}
 
-	.thumb-desc {padding-left: 30px; padding-right: 30px;}
+  .thumb-desc {padding-left: 30px; padding-right: 30px;}
 
-	.overlay {font-size: 2em;}
+  .overlay {font-size: 2em;}
 
-	.container {padding: 20px;}
+  .container {padding: 20px;}
 }
 
 @media only screen and (min-width: 550px) {
-	#first ul li {margin: 0 3%;}
+  #first ul li {margin: 0 3%;}
 
-	#first nav {margin-top: 5vh; margin-bottom: 5vh;}
+  #first nav {margin-top: 5vh; margin-bottom: 5vh;}
 
-	#intro .container {padding-bottom: 50px;}
+  #intro .container {padding-bottom: 50px;}
 
-	#intro .margin {margin-bottom: 20px;}
+  #intro .margin {margin-bottom: 20px;}
 
-	#first-thumb {padding-top: 10px;}
+  #first-thumb {padding-top: 10px;}
 
-	#up {margin-top: 50px;}
+  #up {margin-top: 50px;}
 
-	.container {padding: 40px;}
+  .container {padding: 40px;}
 
-	.margin {margin-bottom: 40px;}
+  .margin {margin-bottom: 40px;}
 
-	.wrap {padding: 30px 0 10px;}
+  .wrap {padding: 30px 0 10px;}
 
-	.col-sm-12 {padding: 40px;}
+  .col-sm-12 {padding: 40px;}
 }
 
 @media only screen and (min-width: 700px) {
-	h1 {font-size: 3.5em;}
+  h1 {font-size: 3.5em;}
 
-	#intro p {text-align: justify;}
+  #intro p {text-align: justify;}
 
-	#intro .container {padding-bottom: 70px;}
+  #intro .container {padding-bottom: 70px;}
 
-	#intro .margin {margin-bottom: 25px;}
+  #intro .margin {margin-bottom: 25px;}
 
-	#contact .row {padding-top: 0; padding-bottom: 30px;}
+  #contact .row {padding-top: 0; padding-bottom: 30px;}
 
-	#up {margin-top: 60px;}
+  #up {margin-top: 60px;}
 
-	.container {max-width: 650px; padding: 60px 0;}
+  .container {max-width: 650px; padding: 60px 0;}
 
-	.margin {margin-bottom: 60px;}
+  .margin {margin-bottom: 60px;}
 
-	.last-desc {padding-bottom: 40px;}
+  .last-desc {padding-bottom: 40px;}
 
-	.desc {padding-bottom: 80px;}
+  .desc {padding-bottom: 80px;}
 
-	.overlay {font-size: 3em;}
+  .overlay {font-size: 3em;}
 
-	.more {width: 100%; border-color: transparent;}
+  .more {width: 100%; border-color: transparent;}
 
-	-webkit-@keyframes fly {
-		0% {-webkit-transform: translate(0, 0) scale(1); letter-spacing: normal;}
-		35% {-webkit-transform: translate(150px, 1000%) scale(0); letter-spacing: 45px;}
-		40% {-webkit-transform: translate(-50px, 4000%) scale(0); letter-spacing: 45px;}
-		90% {-webkit-transform: translate(0, 0) scale(0.45);}
-		100% {-webkit-transform: translate(0, 0) scale(1); letter-spacing: normal;}
-		0% {transform: translate(0, 0) scale(1); letter-spacing: normal;}
-		35% {transform: translate(150px, 1000%) scale(0); letter-spacing: 45px;}
-		40% {transform: translate(-50px, 4000%) scale(0); letter-spacing: 45px;}
-		90% {transform: translate(0, 0) scale(0.45);}
-		100% {transform: translate(0, 0) scale(1); letter-spacing: normal;}
-	}
+  -webkit-@keyframes fly {
+	0% {-webkit-transform: translate(0, 0) scale(1); letter-spacing: normal;}
+	35% {-webkit-transform: translate(150px, 1000%) scale(0); letter-spacing: 45px;}
+	40% {-webkit-transform: translate(-50px, 4000%) scale(0); letter-spacing: 45px;}
+	90% {-webkit-transform: translate(0, 0) scale(0.45);}
+	100% {-webkit-transform: translate(0, 0) scale(1); letter-spacing: normal;}
+	0% {transform: translate(0, 0) scale(1); letter-spacing: normal;}
+	35% {transform: translate(150px, 1000%) scale(0); letter-spacing: 45px;}
+	40% {transform: translate(-50px, 4000%) scale(0); letter-spacing: 45px;}
+	90% {transform: translate(0, 0) scale(0.45);}
+	100% {transform: translate(0, 0) scale(1); letter-spacing: normal;}
+  }
 
-	-moz-@keyframes fly {
-		0% {-moz-transform: translate(0, 0) scale(1); letter-spacing: normal;}
-		35% {-moz-transform: translate(150px, 1000%) scale(0); letter-spacing: 45px;}
-		40% {-moz-transform: translate(-50px, 4000%) scale(0); letter-spacing: 45px;}
-		90% {-moz-transform: translate(0, 0) scale(0.45);}
-		100% {-moz-transform: translate(0, 0) scale(1); letter-spacing: normal;}
-	}
+  -moz-@keyframes fly {
+	0% {-moz-transform: translate(0, 0) scale(1); letter-spacing: normal;}
+	35% {-moz-transform: translate(150px, 1000%) scale(0); letter-spacing: 45px;}
+	40% {-moz-transform: translate(-50px, 4000%) scale(0); letter-spacing: 45px;}
+	90% {-moz-transform: translate(0, 0) scale(0.45);}
+	100% {-moz-transform: translate(0, 0) scale(1); letter-spacing: normal;}
+  }
 
-	-o-@keyframes fly {
-		0% {-o-transform: translate(0, 0) scale(1); letter-spacing: normal;}
-		35% {-o-transform: translate(150px, 1000%) scale(0); letter-spacing: 45px;}
-		40% {-o-transform: translate(-50px, 4000%) scale(0); letter-spacing: 45px;}
-		90% {-o-transform: translate(0, 0) scale(0.45);}
-		100% {-o-transform: translate(0, 0) scale(1); letter-spacing: normal;}
-	}
+  -o-@keyframes fly {
+	0% {-o-transform: translate(0, 0) scale(1); letter-spacing: normal;}
+	35% {-o-transform: translate(150px, 1000%) scale(0); letter-spacing: 45px;}
+	40% {-o-transform: translate(-50px, 4000%) scale(0); letter-spacing: 45px;}
+	90% {-o-transform: translate(0, 0) scale(0.45);}
+	100% {-o-transform: translate(0, 0) scale(1); letter-spacing: normal;}
+  }
 
-	@keyframes fly {
-		0% {transform: translate(0, 0) scale(1); border: none;}
-		35% {transform: translate(150px, 200%) scale(0);}
-		45% {transform: translate(-50px, 500%) scale(0.25);}
-		90% {transform: translate(0, 0) scale(0.45);}
-		100% {transform: translate(0, 0) scale(1); border: none;}
-	}
+  @keyframes fly {
+	0% {transform: translate(0, 0) scale(1); border: none;}
+	35% {transform: translate(150px, 200%) scale(0);}
+	45% {transform: translate(-50px, 500%) scale(0.25);}
+	90% {transform: translate(0, 0) scale(0.45);}
+	100% {transform: translate(0, 0) scale(1); border: none;}
+  }
 }
 
 @media only screen and (min-width: 768px) {
-	#first ul li a {padding: 15px;}
+  #first ul li a {padding: 15px;}
 
-	#solo-modal .container {max-width: 565px;}
+  #solo-modal .container {max-width: 565px;}
 }
 
 @media only screen and (min-width: 992px) {
-	header, h1 {
-		border-top: thin solid rgba(288, 288, 288, 0.7);
-		border-bottom: thin solid rgba(288, 288, 288, 0.7);
-	}
+  header, h1 {
+    border-top: thin solid rgba(288, 288, 288, 0.7);
+    border-bottom: thin solid rgba(288, 288, 288, 0.7);
+  }
 
-	h1 {font-size: 4em;}
+  h1 {font-size: 4em;}
 
-	p {font-size: 1.5em; line-height: 1.5;}
+  p {font-size: 1.5em; line-height: 1.5;}
 
-	#first ul li {margin: 0 5%;}
+  #first ul li {margin: 0 5%;}
 
-	#projects .container {
-		width: 100%; 
-		max-width: 5000px;
-		margin 0 auto;
-		padding-left: 75px;
-		padding-right: 75px;
-	}
+  #projects .container {
+    width: 100%; 
+    max-width: 5000px;
+    margin 0 auto;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
 
-	#projects .row:last-of-type .wrap {padding-bottom: 30px;}
+  #projects .row:last-of-type .wrap {padding-bottom: 30px;}
 
-	#first-thumb-desc {padding-top: 5px;}
+  #first-thumb-desc {padding-top: 5px;}
 
-	#solo-modal .container {max-width: 860px;}
+  #solo-modal .container {max-width: 860px;}
 
-	.image-wrap {border: thin solid rgba(53 ,180 ,160 , 0);}
+  .image-wrap {border: thin solid rgba(53 ,180 ,160 , 0);}
 
-	.image-wrap:hover {border: thin solid white;}
+  .image-wrap:hover {border: thin solid white;}
 
-	.wrap {padding: 50px;}
+  .wrap {padding: 50px;}
 
-	.overlay {font-size: 2.25em;}
+  .overlay {font-size: 2.25em;}
 
-	.more {border-radius: 10px;}
+  .more {border-radius: 10px;}
 
-	.desc {padding-right: 50px;}
+  .desc {padding-right: 50px;}
 
-	.thumb-desc {padding: 50px 0 0; text-align: justify;}
+  .thumb-desc {padding: 50px 0 0; text-align: justify;}
 
-	@-webkit-keyframes sweep {
-		0% {opacity: 0; -webkit-transform: translateX(50%) skewY(60deg);}
-		100% {opacity: 1; -webkit-transform: translateX(0%) skewY(0deg);}
-		0% {opacity: 0; transform: translateX(50%) skewY(60deg);}
-		100% {opacity: 1; transform: translateX(0%) skewY(0deg);}
-	}
+  @-webkit-keyframes sweep {
+	0% {opacity: 0; -webkit-transform: translateX(50%) skewY(60deg);}
+	100% {opacity: 1; -webkit-transform: translateX(0%) skewY(0deg);}
+	0% {opacity: 0; transform: translateX(50%) skewY(60deg);}
+	100% {opacity: 1; transform: translateX(0%) skewY(0deg);}
+  }
 
-	@-moz-keyframes sweep {
-		0% {opacity: 0; -moz-transform: translateX(50%) skewY(60deg);}
-		100% {opacity: 1; -moz-transform: translateX(0%) skewY(0deg);}
-	}
+  @-moz-keyframes sweep {
+	0% {opacity: 0; -moz-transform: translateX(50%) skewY(60deg);}
+	100% {opacity: 1; -moz-transform: translateX(0%) skewY(0deg);}
+  }
 
-	@-o-keyframes sweep {
-		0% {opacity: 0; -o-transform: translateX(50%) skewY(60deg);}
-		100% {opacity: 1; -o-transform: translateX(0%) skewY(0deg);}
-	}
+  @-o-keyframes sweep {
+	0% {opacity: 0; -o-transform: translateX(50%) skewY(60deg);}
+	100% {opacity: 1; -o-transform: translateX(0%) skewY(0deg);}
+  }
 
-	@keyframes sweep {
-		0% {opacity: 0; transform: translateX(50%) skewY(60deg);}
-		100% {opacity: 1; transform: translateX(0%) skewY(0deg);}
-	}
+  @keyframes sweep {
+	0% {opacity: 0; transform: translateX(50%) skewY(60deg);}
+	100% {opacity: 1; transform: translateX(0%) skewY(0deg);}
+  }
 }
 
 @media only screen and (min-device-width: 1024) {
-	body {background: rgb(82, 82, 82) url("images/adam23.jpg") center top/cover no-repeat fixed;}
+  body {
+    background: rgb(82, 82, 82) url("images/adam23.jpg") center top/cover no-repeat fixed;
+  }
 }
 
 @media only screen and (min-width: 1920px) {
@@ -565,7 +583,9 @@ input[type="text"], input[type="email"], button[type="submit"], textarea.form-co
 
   p {font-size: 1.7em;}
 
-  input[type="text"], input[type="email"], button[type="submit"], textarea.form-control {font-size: 1.2em;}
+  input[type="text"], input[type="email"], button[type="submit"], textarea.form-control {
+    font-size: 1.2em;
+  }
 
   input[type="text"], input[type="email"], textarea.form-control {
     margin-bottom: 4%;
@@ -580,8 +600,8 @@ input[type="text"], input[type="email"], button[type="submit"], textarea.form-co
   #contact .row {padding-top: 30px;}
 
   #projects .container {
-		padding-left: 125px;
-		padding-right: 125px;
+    padding-left: 125px;
+    padding-right: 125px;
   }
 
   #projects .row:first-of-type .wrap {padding-top: 40px;}
@@ -603,8 +623,8 @@ input[type="text"], input[type="email"], button[type="submit"], textarea.form-co
 
 @media only screen and (min-width: 3000px) {
   body {
-		font-size: 3em;
-		background: rgb(82, 82, 82) url("images/adam23b.jpg") center top/cover no-repeat fixed;
+    font-size: 3em;
+    background: rgb(82, 82, 82) url("images/adam23b.jpg") center top/cover no-repeat fixed;
   }
 
   h1 {font-size: 7em;}
@@ -613,9 +633,14 @@ input[type="text"], input[type="email"], button[type="submit"], textarea.form-co
 
   p {font-size: 2em; line-height: 1.7;}
 
-  input[type="text"], input[type="email"], button[type="submit"] {height: 80px;}
+  input[type="text"], input[type="email"], button[type="submit"] {
+    height: 80px;
+  }
 
-  input[type="text"], input[type="email"], textarea.form-control {font-size: 1.5em; line-height: 1.5;}
+  input[type="text"], input[type="email"], textarea.form-control {
+    font-size: 1.5em; 
+    line-height: 1.5;
+  }
 
   button[type="submit"] {line-height: 0.25; padding: 1.5em;}
 
@@ -646,8 +671,8 @@ input[type="text"], input[type="email"], button[type="submit"], textarea.form-co
   h1 {border-top: thick double white;  border-bottom: thick double white;}
 
   #projects .container {
-		padding-left: 145px;
-		padding-right: 145px;
+    padding-left: 145px;
+    padding-right: 145px;
   }
 
   .wrap {padding: 130px;}
@@ -658,7 +683,9 @@ input[type="text"], input[type="email"], button[type="submit"], textarea.form-co
 @media only screen and (min-width: 5000px) {
   body {font-size: 4em;}
 
-  input[type="text"], input[type="email"], button[type="submit"] {height: 110px;}
+  input[type="text"], input[type="email"], button[type="submit"] {
+    height: 110px;
+  }
 
   textarea.form-control {height: 460px;}
 
