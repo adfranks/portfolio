@@ -104,6 +104,15 @@ input[type="text"], input[type="email"], button[type="submit"], textarea.form-co
 :-ms-input-placeholder {color: white !important; font-style: italic;}
 
 /* Style elements with an id. */
+#backg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  z-index: -1; 
+  min-width: 100%;
+  min-height: 100%;
+}
+
 #first {position: relative; height: 100%;}
 
 #first nav {margin-top: 4vh; margin-bottom: 4vh;}
