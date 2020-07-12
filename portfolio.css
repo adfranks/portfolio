@@ -1,8 +1,8 @@
 /* Styling basic elements */
-html, body {height: 100%;}
+html, body {height: 100%; min-width: 310px;}
 
 body {
-  background: transparent;
+  background-color: #545454;
   font-family: Tahoma, "Trebuchet MS", Verdana, Georgia, sans-serif;
   color: white;
   letter-spacing: 0.75px;
@@ -17,8 +17,12 @@ body:after {
   bottom: 0;
   z-index: -1;
   display: block;
-  background: url("images/adam23.jpg") no-repeat;
+  background-image: url("images/adam23.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 header {
@@ -100,15 +104,6 @@ input[type="text"], input[type="email"], button[type="submit"], textarea.form-co
 :-ms-input-placeholder {color: white !important; font-style: italic;}
 
 /* Style elements with an id. */
-#backg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  min-width: 100%;
-  min-height: 100%;
-}
-
 #first {position: relative; height: 100%;}
 
 #first nav {margin-top: 4vh; margin-bottom: 4vh;}
@@ -413,56 +408,64 @@ input[type="text"], input[type="email"], button[type="submit"], textarea.form-co
 
 @media only screen and (min-width: 550px) and (max-width: 768px) {
   body:after {
-    background: url("images/adam768.jpg") no-repeat;
+    background-image: url("images/adam768.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
   }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 992px) {
   body:after {
-    background: url("images/adam992.jpg") no-repeat;
+    background-image: url("images/adam992.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
   }
 }
 
 @media only screen and (min-width: 993px) and (max-width: 1280px) {
   body:after {
-    background: url("images/adam1280.jpg") no-repeat;
+    background-image: url("images/adam1280.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
   }
 }
 
 @media only screen and (min-width: 1281px) and (max-width: 1366px) {
   body:after {
-    background: url("images/adam1366.jpg") no-repeat;
+    background-image: url("images/adam1366.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
   }
 }
 
 @media only screen and (min-width: 1367px) and (max-width: 1920px) {
   body:after {
-    background: url("images/adam1920.jpg") no-repeat;
+    background-image: url("images/adam1920.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
   }
 }
 
 @media only screen and (min-width: 1920px) and (max-width: 2560px) {
   body:after {
-    background: url("images/adam2560.jpg") no-repeat;
+    background-image: url("images/adam2560.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
   }
 }
 
 @media only screen and (min-width: 2561px) and (max-width: 4000px) {
   body:after {
-    background: url("images/adam4000.jpg") no-repeat;
+    background-image: url("images/adam4000.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
   }
 }
 
 @media only screen and (min-width: 4000px) and (max-width: 7680px) {
   body:after {
-    background: url("images/adam7680.jpg") no-repeat;
+    background-image: url("images/adam7680.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
   }
 }
