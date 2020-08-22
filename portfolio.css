@@ -1,5 +1,8 @@
 /* Styling basic elements */
-html, body {height: 100%; min-width: 310px;}
+html, body {
+  height: 100%; 
+  min-width: 310px;
+}
 
 body {
   background-color: #545454;
@@ -8,7 +11,7 @@ body {
   letter-spacing: 0.75px;
 }
 
-body:after {
+body::after {
   content: "";
   position: fixed;
   left: 0;
@@ -416,7 +419,7 @@ input[type="text"], input[type="email"], button[type="submit"], textarea.form-co
 }
 
 @media only screen and (min-width: 550px) and (max-width: 768px) {
-  body:after {
+  body::after {
     background-image: url("images/adam768.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -424,7 +427,7 @@ input[type="text"], input[type="email"], button[type="submit"], textarea.form-co
 }
 
 @media only screen and (min-width: 769px) and (max-width: 992px) {
-  body:after {
+  body::after {
     background-image: url("images/adam992.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -432,7 +435,7 @@ input[type="text"], input[type="email"], button[type="submit"], textarea.form-co
 }
 
 @media only screen and (min-width: 993px) and (max-width: 1280px) {
-  body:after {
+  body::after {
     background-image: url("images/adam1280.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -440,7 +443,7 @@ input[type="text"], input[type="email"], button[type="submit"], textarea.form-co
 }
 
 @media only screen and (min-width: 1281px) and (max-width: 1366px) {
-  body:after {
+  body::after {
     background-image: url("images/adam1366.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -448,7 +451,7 @@ input[type="text"], input[type="email"], button[type="submit"], textarea.form-co
 }
 
 @media only screen and (min-width: 1367px) and (max-width: 1920px) {
-  body:after {
+  body::after {
     background-image: url("images/adam1920.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -456,7 +459,7 @@ input[type="text"], input[type="email"], button[type="submit"], textarea.form-co
 }
 
 @media only screen and (min-width: 1920px) and (max-width: 2560px) {
-  body:after {
+  body::after {
     background-image: url("images/adam2560.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -464,7 +467,7 @@ input[type="text"], input[type="email"], button[type="submit"], textarea.form-co
 }
 
 @media only screen and (min-width: 2561px) and (max-width: 4000px) {
-  body:after {
+  body::after {
     background-image: url("images/adam4000.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -472,7 +475,7 @@ input[type="text"], input[type="email"], button[type="submit"], textarea.form-co
 }
 
 @media only screen and (min-width: 4000px) and (max-width: 7680px) {
-  body:after {
+  body::after {
     background-image: url("images/adam7680.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -766,4 +769,13 @@ input[type="text"], input[type="email"], button[type="submit"], textarea.form-co
   .container {max-width: 3000px;}
 
   .more {padding: 40px 0;}
+}
+
+/* IE 10 & 11 feature detection */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  body {
+    background-image: url("images/adam2560.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
