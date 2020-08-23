@@ -774,8 +774,9 @@ input[type="text"], input[type="email"], button[type="submit"], textarea.form-co
 /* IE 10 & 11 feature detection */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   body {
-    background-image: url("images/adam2560.jpg");
+    background-image: url("images/adam768.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
   }
 }
