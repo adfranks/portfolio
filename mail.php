@@ -15,11 +15,14 @@ echo '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
   <!--[if !mso]><!-->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <!--<![endif]-->
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact response</title>
+  <link rel="icon" href="images/A-icon.png">
 
   <!--[if (gte mso 9)|(IE)]>
   <style type="text/css">
@@ -126,7 +129,7 @@ echo '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
             <tr>
               <td align="center" class="footercopy" style="border-collapse:collapse;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:Calibri,Helvetica,Verdana,sans-serif;font-size:24px;line-height:34px;color:#ffffff;" >
                 <a href="index.html" style="color:#ffffff;text-decoration:underline;" ><font color="#ffffff">Portfolio of Adam Franks</font></a><br />
-                <a href="https://github.com/adfranks" ><font color="#ffffff">GitHub</font></a>
+                <a href="https://github.com/adfranks"  style="color:#ffffff;text-decoration:underline;" ><font color="#ffffff">GitHub</font></a>
               </td>
             </tr>
             <tr>
