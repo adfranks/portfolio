@@ -91,7 +91,7 @@ echo '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
             </tr>
           </table>
 
-              <!--[if (gte mso 9)|(IE)}>
+              <!--[if (gte mso 9)|(IE)]>
               </td>
             </tr>
           </table>
