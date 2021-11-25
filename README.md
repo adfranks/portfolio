@@ -1,2 +1,2 @@
 # portfolio
-Web development portfolio.  Utilized Bootstrap.
+Personal web development projects portfolio.  Utilized Bootstrap.
